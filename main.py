@@ -1,10 +1,6 @@
 #!/usr/bin/env python3
 """
-DomainFront Tunnel — Bypass DPI censorship via Domain Fronting.
-
-Run a local HTTP proxy that tunnels all traffic through a CDN using
-domain fronting: the TLS SNI shows an allowed domain while the encrypted
-HTTP Host header routes to your Cloudflare Worker relay.
+in comment ro mizaram ke vercel gir nade alaki be man 
 """
 
 import argparse
