@@ -1,17 +1,5 @@
 """
-HTTP/2 multiplexed transport for domain-fronted connections.
 
-One TLS connection → many concurrent HTTP/2 streams → massive throughput.
-Eliminates per-request TLS handshake overhead entirely.
-
-Instead of a pool of 30 HTTP/1.1 connections (each handling 1 request),
-this uses a SINGLE HTTP/2 connection handling 100+ concurrent requests.
-
-Performance comparison:
-  HTTP/1.1 pool: 30 connections × 1 request = 30 concurrent requests max
-  HTTP/2 mux:    1 connection  × 100 streams = 100 concurrent requests
-
-Requires: pip install h2
 """
 
 import asyncio
