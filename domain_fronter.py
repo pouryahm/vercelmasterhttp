@@ -1,19 +1,5 @@
 """
-CDN Relay engine.
 
-Modes:
-  1. custom_domain   — SNI and Host both point to your custom domain on CF.
-  2. domain_fronting  — SNI = front_domain (allowed), Host = worker_host.
-  3. vercel_edge     — Domain fronting to your Vercel relay endpoint.
-     POST JSON to your Vercel host/path (e.g. /api/api).
-     Vercel relay fetches the target URL and returns the response.
-
-Modes 1-3:
-  tunnel()  — WebSocket-based TCP tunnel (HTTPS / any TCP)
-  forward() — HTTP request forwarding    (plain HTTP)
-
-Mode 3 (vercel_edge):
-  relay()   — JSON-based HTTP relay through Vercel
 """
 
 import asyncio
