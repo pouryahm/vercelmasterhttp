@@ -1,8 +1,5 @@
 """
-Minimal WebSocket frame encoder / decoder (RFC 6455).
 
-Only handles binary (opcode 0x02) and close (opcode 0x08) frames.
-Client-to-server frames are always masked as required by the spec.
 """
 
 import os
