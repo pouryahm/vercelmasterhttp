@@ -1,12 +1,5 @@
 """
-Local HTTP proxy server.
 
-Intercepts the user's browser traffic and forwards everything through
-a domain-fronted connection to a CDN worker or Vercel relay.
-
-Supports:
-  - CONNECT method  → WebSocket tunnel (modes 1-3) or MITM relay (vercel_edge)
-  - GET / POST etc. → HTTP forwarding  (modes 1-3) or JSON relay (vercel_edge)
 """
 
 import asyncio
