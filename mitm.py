@@ -1,11 +1,4 @@
 """
-MITM certificate manager for HTTPS interception.
-
-Generates a CA certificate (once, stored as files) and per-domain
-certificates (on the fly, cached in memory) so the local proxy can
-decrypt HTTPS traffic and relay it through Apps Script.
-
-The user must install ca/ca.crt in their browser's trusted CAs once.
 
 Requires: pip install cryptography
 """
